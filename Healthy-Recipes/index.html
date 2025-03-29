@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Healthy Recipes</h1>
+    <p>Delicious and nutritious recipes to fuel your day</p>
+  </header>
+
+  <!-- Filter Options -->
+  <section class="filter">
+    <label for="category">Filter by Category:</label>
+    <select id="category" onchange="filterRecipes()">
+      <option value="all">All Recipes</option>
+      <option value="salads">Salads</option>
+      <option value="smoothies">Smoothies</option>
+      <option value="soups">Soups</option>
+    </select>
+  </section>
+
+  <!-- Recipe Cards -->
+  <section id="recipe-container" class="recipe-container">
+    <!-- Recipes will be dynamically added here -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
